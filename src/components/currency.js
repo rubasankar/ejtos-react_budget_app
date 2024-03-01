@@ -12,12 +12,13 @@ const Currency = () => {
     };
 
     return (
-        <div className="alert alert-secondary d-flex flex-md-row">
+        <div className="alert alert-secondary" style={{backgroundColor:"lightgreen",color:"white"}}>
             Currency
             {
-                <select className='form-select form-select-sm mx-lg-2 w-50'
+                <select
                 name="Currency"
                 id="Currency"
+                style={{backgroundColor:"lightgreen",color:"white",border:"none"}}
                 onChange={(event) => changeLocation(event.target.value)}>
                 <option value="$">$ Dollor</option>
                 <option value="£">£ Pound</option>
